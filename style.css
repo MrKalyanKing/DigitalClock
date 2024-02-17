@@ -1,0 +1,53 @@
+body{
+    background:linear-gradient( 80deg, blue,pink);
+}
+.conntainer{
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    margin: 140px auto 0px;
+    background-color: blueviolet;
+    border-radius: 7px;
+    backdrop-filter: blur(40px);
+    box-shadow: 10px 10px 10px 10px lightgreen;
+
+}
+.clock span{
+    font-size: 40px;
+    font-weight: 600;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:aqua ;
+    text-shadow: 5px 5px 5px 5px yellow ;
+    
+   
+
+}
+.conntainer::before{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: #f41b75;
+    border-radius: 5px;
+    position: absolute;
+    left: -50px;
+    right: -50px;
+    z-index: -1;
+}
+.conntainer::after{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: #c71585 ;
+    border-radius: 100px;
+    position: absolute;
+    top: 90px;
+    right: -80px;
+    z-index: -1;
+
+}
+span{
+    text-shadow: 2px 3px rgb(240, 83, 10);
+}
+
